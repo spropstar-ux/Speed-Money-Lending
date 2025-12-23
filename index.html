@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Money Lending</title>
+
+    <meta
+      name="description"
+      content="Fast, flexible private capital for real estate investors across the Southeast."
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-[#f7f4ef] text-gray-800">
+    <!-- NAVBAR -->
+    <header
+      class="fixed w-full bg-[#f7f4ef]/90 backdrop-blur z-50 border-b border-gray-300"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-2">
+          <div class="w-12 flex items-center justify-center vintage font-bold">
+            <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766521760/Speed_money_lending_1_iufjid_he2meg.png" alt="company-logo" />
+          </div>
+          <span class="vintage text-xl font-semibold">Speed Money Lending</span>
+        </div>
+
+ <ul class="hidden md:flex gap-8 text-sm uppercase tracking-widest vintage-nav items-center">
+  <li><a href="#about" class="nav-link">About</a></li>
+  <li><a href="#process" class="nav-link">How We Work</a></li>
+  <li><a href="#benefits" class="nav-link">Our Benefits</a></li>
+  <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+  <li>
+  <a href="tel:+15551234567" class="flex items-center gap-2 vintage-phone hover:text-[#b59b6e] transition">
+    <!-- Vintage Rotary Phone SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current" viewBox="0 0 64 64" fill="none" stroke-width="2">
+      <!-- Handset -->
+      <path d="M44 4c4 0 8 4 8 8l0.5 8c0 4-4 8-8 8s-8-4-8-8V12c0-4 4-8 8-8zM20 4c4 0 8 4 8 8v8c0 4-4 8-8 8s-8-4-8-8L12 12c0-4 4-8 8-8z" />
+      <!-- Rotary Dial -->
+      <circle cx="32" cy="44" r="16" />
+      <circle cx="32" cy="44" r="4" fill="currentColor" />
+      <path d="M32 28v-6M42 32h6M32 54v6M22 32h-6M41.3 22.7l4.2-4.2M46.8 41.3l4.2 4.2M22.7 41.3l-4.2 4.2M17.2 22.7l-4.2-4.2" />
+    </svg>
+
+    <!-- Phone Number Text -->
+    <span class="font-serif text-sm tracking-widest">
+      (555) 123‑4567
+    </span>
+  </a>
+</li>
+</ul>
+
+        <!-- Hamburger Menu -->
+        <div class="md:hidden hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="#about" class="hover:text-[#b59b6e]">About</a></li>
+          <li><a href="#how-we-work" class="hover:text-[#b59b6e]">How We Work</a></li>
+          <li><a href="#benefits" class="hover:text-[#b59b6e]">Our Benefits</a></li>
+            <li><a href="#why-choose-us" class="hover:text-[#b59b6e]">Why US</a></li>
+            <li>
+  <a href="tel:+15551234567" class="flex items-center gap-2 mt-2 vintage-phone hover:text-[#b59b6e] transition">
+    <!-- Vintage Rotary Phone SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current" viewBox="0 0 64 64" fill="none" stroke-width="2">
+      <!-- Handset -->
+      <path d="M44 4c4 0 8 4 8 8l0.5 8c0 4-4 8-8 8s-8-4-8-8V12c0-4 4-8 8-8zM20 4c4 0 8 4 8 8v8c0 4-4 8-8 8s-8-4-8-8L12 12c0-4 4-8 8-8z" />
+      <!-- Rotary Dial -->
+      <circle cx="32" cy="44" r="16" />
+      <circle cx="32" cy="44" r="4" fill="currentColor" />
+      <path d="M32 28v-6M42 32h6M32 54v6M22 32h-6M41.3 22.7l4.2-4.2M46.8 41.3l4.2 4.2M22.7 41.3l-4.2 4.2M17.2 22.7l-4.2-4.2" />
+    </svg>
+
+    <!-- Phone Number Text -->
+    <span class="font-serif text-sm tracking-widest">
+      (555) 123‑4567
+    </span>
+  </a>
+</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative h-screen flex items-center">
+      <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766521996/steptodown.com392865_n7sefx.jpg" alt=" hero-image" class="absolute inset-0 w-full h-full object-cover" />
+
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-white"
+      >
+        <div>
+          <h1 class="vintage text-4xl md:text-5xl font-bold">
+            Private Capital for<br />Real-Estate Investors
+          </h1>
+          <p class="mt-6 text-lg text-gray-200">
+            Fast approvals, flexible terms, dependable funding for acquisitions
+            & rehabs.
+          </p>
+        </div>
+
+        <!-- FORM -->
+        <form
+          id="loanForm"
+          class="glass-card text-gray-900 p-8"
+          aria-label="Funding Request Form"
+        >
+          <h2 class="vintage text-2xl mb-6">Request Funding</h2>
+
+          <label class="sr-only">Full Name</label>
+          <input
+            required
+            id="name"
+            type="text"
+            placeholder="Full Name"
+            class="vintage-input w-full py-3 mb-4 focus:outline-none"
+          />
+
+          <label class="sr-only">Phone Number</label>
+          <input
+            required
+            id="phone"
+            type="tel"
+            placeholder="USA Phone (XXX) XXX-XXXX"
+            class="vintage-input w-full py-3 mb-4 focus:outline-none"
+          />
+
+          <label class="sr-only">Email</label>
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="Email Address"
+            class="vintage-input w-full py-3 mb-4 focus:outline-none"
+          />
+
+          <button
+            type="submit"
+            class="mt-8 w-full border border-gray-800 py-3 uppercase tracking-widest hover:bg-gray-800 hover:text-white transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+<!-- ABOUT US -->
+<section id="about" class="py-28 bg-[#f7f4ef] border-t border-gray-300">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="vintage text-3xl mb-4">About Speed Money Lending</h2>
+    <p class="text-gray-700 max-w-2xl mx-auto mb-4 leading-relaxed">
+      A private capital firm built on clarity, discipline, and trust.
+    </p>
+
+    <!-- Divider -->
+    <div class="flex justify-center mb-14">
+      <svg class="w-44 h-6 text-[#b59b6e]" fill="none" stroke="currentColor" stroke-width="5" viewBox="0 0 220 20">
+        <path d="M10 10h70m20 0h70m20 0h20" stroke-linecap="round"/>
+      </svg>
+    </div>
+    
+<!-- Description -->
+    <div class="space-y-8 text-gray-700 leading-relaxed max-w-3xl mx-auto text-left md:text-center">
+
+      <p>
+        Speed Money Lending was established to serve real estate investors who
+        value decisiveness, transparency, and reliable execution. In an industry
+        often burdened by delays and uncertainty, our focus remains simple:
+        provide private capital when timing matters most.
+      </p>
+
+      <p>
+        Our underwriting philosophy emphasizes asset quality, exit strategy,
+        and sponsor experience — not excessive documentation. This approach
+        allows us to move efficiently while maintaining disciplined risk
+        standards.
+      </p>
+
+      <p>
+        We work alongside investors acquiring, rehabilitating, and refinancing
+        residential and mixed-use properties throughout the Southeast. Each
+        transaction is approached with care, discretion, and a long-term
+        perspective.
+      </p>
+
+      <p class="vintage text-lg text-gray-800 text-center mt-10">
+        Speed. Structure. Trust.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- How WE Work -->
+    <section id="how-we-work" class="py-28 bg-[#f7f4ef] border-t border-gray-300">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="vintage text-3xl mb-4">How We Work</h2>
+      <p class="text-gray-700 max-w-xl mx-auto mb-10 leading-relaxed">
+        A disciplined and transparent approach to private lending.
+      </p>
+
+      <div class="flex justify-center">
+        <svg class="w-44 h-6 text-[#b59b6e]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 220 20">
+          <path d="M10 10h70m20 0h70m20 0h20" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Text -->
+      <div class="space-y-14 text-gray-700">
+
+        <div>
+          <span class="vintage text-2xl text-[#b59b6e]">I.</span>
+          <p class="mt-3 leading-relaxed">
+            Each engagement begins with a direct inquiry. We evaluate the asset,
+            the proposed strategy, and the investor’s objectives.
+          </p>
+        </div>
+
+        <div>
+          <span class="vintage text-2xl text-[#b59b6e]">II.</span>
+          <p class="mt-3 leading-relaxed">
+            Our underwriting emphasizes property value, market conditions, and
+            exit strategy—allowing efficient, disciplined decisions.
+          </p>
+        </div>
+
+        <div>
+          <span class="vintage text-2xl text-[#b59b6e]">III.</span>
+          <p class="mt-3 leading-relaxed">
+            Once terms are established, funding is executed with clarity and
+            consistency, supported throughout the investment lifecycle.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Image -->
+      <figure class="text-center">
+        <div class="p-3 border border-gray-400 bg-[#faf7f2]">
+          <img
+            src="https://images.unsplash.com/photo-1501183638710-841dd1904471"
+            alt="Archival financial building"
+            class="grayscale opacity-90"
+          />
+        </div>
+        <figcaption class="mt-4 text-xs tracking-widest uppercase text-gray-600">
+          Private Capital Process
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- WHY CHOOSE US -->
+<section id="why-choose-us" class="py-24 bg-[#f2ede2] border-t border-gray-300">
+  <div class="max-w-5xl mx-auto px-6">
+    
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="vintage text-3xl mb-4">Why Choose Speed Money Lending</h2>
+      <div class="h-px w-32 bg-gray-400 mx-auto mb-6"></div>
+      <p class="text-gray-700 leading-relaxed max-w-2xl mx-auto">
+        We believe private lending should be clear, dependable, and built on trust.
+        Here’s what sets us apart.
+      </p>
+    </div>
+
+    <!-- Reasons -->
+    <div class="space-y-16">
+      
+      <!-- Reason 1 -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="vintage text-4xl text-[#b59b6e] md:w-16">I.</div>
+        <div>
+          <h3 class="vintage text-2xl mb-2">Speed When Timing Matters</h3>
+          <p class="text-gray-700 leading-relaxed max-w-2xl">
+            Real estate rewards decisiveness. Our streamlined underwriting process
+            allows investors to move quickly, secure opportunities, and close with confidence.
+          </p>
+        </div>
+      </div>
+
+      <!-- Reason 2 -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="vintage text-4xl text-[#b59b6e] md:w-16">II.</div>
+        <div>
+          <h3 class="vintage text-2xl mb-2">Clarity & Transparency</h3>
+          <p class="text-gray-700 leading-relaxed max-w-2xl">
+            No hidden terms. No surprises. We believe strong partnerships are built
+            on clear communication and straightforward lending structures.
+          </p>
+        </div>
+      </div>
+
+      <!-- Reason 3 -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="vintage text-4xl text-[#b59b6e] md:w-16">III.</div>
+        <div>
+          <h3 class="vintage text-2xl mb-2">A Partner, Not Just a Lender</h3>
+          <p class="text-gray-700 leading-relaxed max-w-2xl">
+            We look beyond paperwork and focus on the asset, the strategy, and the investor.
+            Our goal is long-term relationships—not one-off transactions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <!-- IMAGE SHOWCASE -->
+<section class="py-24 bg-[#f7f4ef] border-t border-gray-300">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <h2 class="vintage text-3xl mb-4">Investments We Support</h2>
+      <div class="h-px w-32 bg-gray-400 mx-auto"></div>
+    </div>
+
+    <!-- Images -->
+    <div class="grid md:grid-cols-3 gap-12">
+      
+      <!-- Image 1 -->
+      <figure class="group text-center">
+        <div class="p-3 border border-gray-400 bg-[#faf7f2]">
+          <img
+            src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766524316/photo-1560518883-ce09059eeffa_lnsijv.jpg"
+            class="grayscale group-hover:grayscale-0 transition duration-700"
+            alt="Residential Property"
+          />
+        </div>
+        <figcaption class="mt-4 text-sm tracking-widest uppercase text-gray-600">
+          Residential Acquisition
+        </figcaption>
+      </figure>
+
+      <!-- Image 2 -->
+      <figure class="group text-center">
+        <div class="p-3 border border-gray-400 bg-[#faf7f2]">
+          <img
+            src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766524319/photo-1582407947304-fd86f028f716_xr9lsv.jpg"
+            class="grayscale group-hover:grayscale-0 transition duration-700"
+            alt="Rehab Project"
+          />
+        </div>
+        <figcaption class="mt-4 text-sm tracking-widest uppercase text-gray-600">
+          Value-Add Rehabilitation
+        </figcaption>
+      </figure>
+
+      <!-- Image 3 -->
+      <figure class="group text-center">
+        <div class="p-3 border border-gray-400 bg-[#faf7f2]">
+          <img
+            src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766524348/photo-1600585154340-be6161a56a0c_jinwcb.jpg"
+            class="grayscale group-hover:grayscale-0 transition duration-700"
+            alt="Buy & Hold Property"
+          />
+        </div>
+        <figcaption class="mt-4 text-sm tracking-widest uppercase text-gray-600">
+          Buy & Hold Assets
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Our Benefits -->
+  <section id="benefits" class="py-20 bg-[#f7f4ef] border-t border-gray-300">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="vintage text-3xl mb-12">Our Benefits</h2>
+    
+    <div class="space-y-16 text-gray-800">
+      <!-- Benefit 1 -->
+      <div class="relative">
+        <h3 class="vintage text-2xl font-semibold mb-2 hover:text-[#b59b6e]">Fast Approvals</h3>
+        <div class="h-1 w-24 bg-[#b59b6e] mx-auto mb-4"></div>
+        <p class="text-gray-700 leading-relaxed max-w-xl mx-auto">
+          Speed is everything in real estate. We provide quick decisions so you never miss an opportunity, keeping the process simple and stress-free.
+        </p>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="relative">
+        <h3 class="vintage text-2xl font-semibold mb-2 hover:text-[#b59b6e]">Flexible Terms</h3>
+        <div class="h-1 w-24 bg-[#b59b6e] mx-auto mb-4"></div>
+        <p class="text-gray-700 leading-relaxed max-w-xl mx-auto">
+          Every project is unique. Our terms adapt to your needs, ensuring a tailored approach without hidden surprises.
+        </p>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="relative">
+        <h3 class="vintage text-2xl font-semibold mb-2 hover:text-[#b59b6e]">Trusted Support</h3>
+        <div class="h-1 w-24 bg-[#b59b6e] mx-auto mb-4"></div>
+        <p class="text-gray-700 leading-relaxed max-w-xl mx-auto">
+          We guide you through every step with transparency and reliability, acting as a true partner in your investment journey.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- TESTIMONIALS -->
+<section class="py-28 max-w-5xl mx-auto px-6 text-center border-t border-gray-300 relative bg-[#f7f4ef]">
+
+  <div class="relative space-y-16">
+
+    <!-- Testimonial 1 -->
+    <div class="testimonial">
+      <blockquote class="vintage text-2xl italic text-gray-800">
+        “Speed Money Lending funded our acquisition exactly when promised. No delays, no surprises.”
+      </blockquote>
+      <p class="mt-2 text-gray-600 uppercase tracking-widest text-sm">— Southeast Real Estate Investor</p>
+      <div class="mt-6 flex justify-center">
+        <svg class="w-32 h-4 text-[#b59b6e]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 120 10">
+          <path d="M0 5h40m20 0h40m20 0h20" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial">
+      <blockquote class="vintage text-2xl italic text-gray-800">
+        “They funded our deal faster than any lender we’ve worked with.”
+      </blockquote>
+      <p class="mt-2 text-gray-600 uppercase tracking-widest text-sm">— Florida Rehab Investor</p>
+      <div class="mt-6 flex justify-center">
+        <svg class="w-32 h-4 text-[#b59b6e]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 120 10">
+          <path d="M0 5h40m20 0h40m20 0h20" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial">
+      <blockquote class="vintage text-2xl italic text-gray-800">
+        “Transparent terms, no surprises, strong partner.”
+      </blockquote>
+      <p class="mt-2 text-gray-600 uppercase tracking-widest text-sm">— Southeast Buy & Hold Investor</p>
+    </div>
+
+  </div>
+</section>
+
+   <!-- FORMAL INQUIRY SECTION -->
+<section id="contact" class="py-28 bg-[#f7f4ef] border-t border-gray-300">
+  <div class="max-w-4xl mx-auto px-6 relative">
+
+    <!-- Watermark -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <span class="vintage text-7xl tracking-widest opacity-[0.03]">
+        INQUIRY
+      </span>
+    </div>
+
+    <div class="relative">
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <h2 class="vintage text-3xl mb-4">Start Your Deal</h2>
+        <div class="h-px w-32 bg-gray-400 mx-auto mb-6"></div>
+        <p class="text-gray-700 leading-relaxed max-w-2xl mx-auto">
+          Provide a brief overview of your project. A member of our team will
+          review your inquiry and respond promptly.
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form class="space-y-12 max-w-2xl mx-auto">
+
+        <!-- Name -->
+        <div>
+          <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
+            Full Name
+          </label>
+          <input
+            type="text"
+            class="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none focus:border-gray-800 transition"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            class="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none focus:border-gray-800 transition"
+          />
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
+            Project Overview
+          </label>
+          <textarea
+            rows="3"
+            class="w-full bg-transparent border-b border-gray-500 py-2 resize-none focus:outline-none focus:border-gray-800 transition"
+          ></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center pt-8">
+          <button
+            class="border border-gray-800 px-10 py-3 uppercase tracking-widest hover:bg-gray-800 hover:text-white transition"
+          >
+            Submit Inquiry
+          </button>
+        </div>
+
+      </form>
+    </div>
+    <!-- Footer Note -->
+    <p class="mt-10 text-xs text-gray-600 tracking-widest text-center uppercase">
+      All submissions are treated as confidential
+    </p>
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+     <footer class="bg-[#e1dacf] border-t border-gray-300 py-8">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-gray-800">
+    
+    <!-- Logo & Description -->
+    <div class="flex items-center gap-4 mb-4 md:mb-0">
+      <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766521760/Speed_money_lending_1_iufjid_he2meg.png" alt="company-logo" class="w-12">
+      <div>
+        <span class="vintage font-semibold text-lg">Speed Money Lending</span>
+        <p class="text-gray-700 text-sm">Fast, flexible private capital for real estate investors.</p>
+      </div>
+    </div>
+
+    <!-- Copyright & Privacy -->
+    <div class="text-gray-600 text-sm">
+      &copy; 2025 Speed Money Lending. 
+      <a href="/privacy-policy" class="hover:underline ml-2">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+    
+  </body>
+  <script src="script.js"></script>
+</html>
