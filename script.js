@@ -77,7 +77,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwFCJfjE7Y4FLuYjiva9ML5CGQ7y2rgVZorI0zhrufte-waeZt98RRY_b4x9L6tV2tx/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbyRAOtSmzAbY3YIvO5xCGyetJbrQfxBUOFxEq9uyXexGcubfTaGA05XGcz3kWnqujxE/exec", {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=utf-8"
@@ -132,7 +132,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 });
 
-document.getElementById("loanForm")?.addEventListener("submit", async function (e) {
+/* document.getElementById("loanForm")?.addEventListener("submit", async function (e) {x
   e.preventDefault();
   const form = e.target;
   const fullNameEl = form.querySelector('#fullName');
@@ -214,3 +214,4 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
     }
   }
 });
+ */
