@@ -77,7 +77,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbyRAOtSmzAbY3YIvO5xCGyetJbrQfxBUOFxEq9uyXexGcubfTaGA05XGcz3kWnqujxE/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycby9LT1EWb200CI1-jBabO2KM8tVegtKOwn6eOhO0f5mCQ0o_uf3yDW5qCVNZwZDFbZz/exec", {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=utf-8"
@@ -130,9 +130,9 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
       submitBtn.innerHTML = "Submit";
     }
   }
-});
+}); 
 
-/* document.getElementById("loanForm")?.addEventListener("submit", async function (e) {x
+document.getElementById("inquiryForm")?.addEventListener("submit", async function (e) {
   e.preventDefault();
   const form = e.target;
   const fullNameEl = form.querySelector('#fullName');
@@ -162,7 +162,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbz_6t-bTYQS09_bkY7_VbUvdy-5pjAIkspFQg15IXEKmRmiSAri776CVnGWyj5ZIxk-7Q/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwt1g1f7SH9jUydfTPkyGSdPg2UV5chfETQwOvSNZOFQbRcEUUKbp-zHdQxCMMpMu11Hg/exec", {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify(formData)
@@ -214,4 +214,3 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
     }
   }
 });
- */
