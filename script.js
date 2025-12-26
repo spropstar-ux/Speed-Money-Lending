@@ -131,3 +131,86 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
     }
   }
 });
+
+document.getElementById("loanForm")?.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const form = e.target;
+  const fullNameEl = form.querySelector('#fullName');
+  const emailEl = form.querySelector('#email');
+  const messageEl = form.querySelector('#message');
+
+  const formData = {
+    fullName: fullNameEl?.value.trim() || '',
+    email: emailEl?.value.trim() || '',
+    message: messageEl?.value.trim() || ''
+  };
+
+  if (!formData.fullName || !formData.email || !formData.message) {
+    Swal.fire({
+      title: "Missing Fields",
+      text: "Please fill all required fields before submitting.",
+      icon: "warning",
+      confirmButtonColor: "#b59b6e"
+    });
+    return;
+  }
+
+  const submitBtn = form.querySelector("button[type='submit']");
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = "<span class=\"spinner-border spinner-border-sm\"></span> Sending...";
+  }
+
+  try {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbz_6t-bTYQS09_bkY7_VbUvdy-5pjAIkspFQg15IXEKmRmiSAri776CVnGWyj5ZIxk-7Q/exec", {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+    if (result.status === "success") {
+      Swal.fire({
+        html: `
+          <div style="padding:30px;text-align:center;">
+            <h2 style="font-size:1.6rem;font-weight:600;color:#000;margin-bottom:12px;">
+              Thank you, ${formData.fullName}
+            </h2>
+            <p style="font-size:1rem;color:#444;margin-bottom:0;line-height:1.6;">
+              We’ve received your message.<br>
+              Our team will connect with you shortly.
+            </p>
+            <p style="margin-top:18px;font-weight:bold;font-size:1.1rem;color:#000;">
+              – Speed Money Lending Team
+            </p>
+          </div>
+        `,
+        background: "#ffffff",
+        color: "#222",
+        width: 500,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        confirmButtonText: "Close",
+        confirmButtonColor: "#000000ff",
+        customClass: {
+          popup: "rounded-2xl shadow-2xl border-0",
+          confirmButton: "px-5 py-2 rounded-md font-medium"
+        }
+      }).then(() => form.reset());
+    } else {
+      throw new Error(result.message || "Something went wrong, please try again.");
+    }
+  } catch (error) {
+    Swal.fire({
+      title: "Oops!",
+      text: error.message,
+      icon: "error",
+      confirmButtonColor: "#b59b6e"
+    });
+  } finally {
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = "Submit Inquiry";
+    }
+  }
+});

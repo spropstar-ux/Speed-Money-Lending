@@ -464,44 +464,45 @@
         </div>
 
         <!-- Form -->
-        <form class="space-y-12 max-w-2xl mx-auto">
+        <form id="loanForm" class="space-y-12 max-w-2xl mx-auto">
 
-          <!-- Name -->
-          <div>
-            <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
-              Full Name
-            </label>
-            <input type="text"
-              class="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none focus:border-gray-800 transition" />
-          </div>
+  <!-- Name -->
+  <div>
+    <label for="fullName" class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
+      Full Name
+    </label>
+    <input type="text" id="fullName" name="fullName"
+      class="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none focus:border-gray-800 transition" />
+  </div>
 
-          <!-- Email -->
-          <div>
-            <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
-              Email Address
-            </label>
-            <input type="email"
-              class="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none focus:border-gray-800 transition" />
-          </div>
+  <!-- Email -->
+  <div>
+    <label for="email" class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
+      Email Address
+    </label>
+    <input type="email" id="email" name="email"
+      class="w-full bg-transparent border-b border-gray-500 py-2 focus:outline-none focus:border-gray-800 transition" />
+  </div>
 
-          <!-- Message -->
-          <div>
-            <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
-              Project Overview
-            </label>
-            <textarea rows="3"
-              class="w-full bg-transparent border-b border-gray-500 py-2 resize-none focus:outline-none focus:border-gray-800 transition"></textarea>
-          </div>
+  <!-- Project Overview / Message -->
+  <div>
+    <label for="message" class="block text-sm uppercase tracking-widest text-gray-600 mb-2">
+      Project Overview
+    </label>
+    <textarea id="message" name="message" rows="3"
+      class="w-full bg-transparent border-b border-gray-500 py-2 resize-none focus:outline-none focus:border-gray-800 transition"></textarea>
+  </div>
 
-          <!-- Button -->
-          <div class="text-center pt-8">
-            <button
-              class="border border-gray-800 px-10 py-3 uppercase tracking-widest hover:bg-gray-800 hover:text-white transition">
-              Submit Inquiry
-            </button>
-          </div>
+  <!-- Button -->
+  <div class="text-center pt-8">
+    <button type="submit"
+      class="border border-gray-800 px-10 py-3 uppercase tracking-widest hover:bg-gray-800 hover:text-white transition">
+      Submit Inquiry
+    </button>
+  </div>
 
-        </form>
+</form>
+
       </div>
       <!-- Footer Note -->
       <p class="mt-10 text-xs text-gray-600 tracking-widest text-center uppercase">
