@@ -4,7 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
- 
+ html{
+    width: 100%;
+ }
       body {
         font-family: "Inter", sans-serif;
       }
@@ -191,4 +193,45 @@
 .testimonial.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hero responsiveness tweaks */
+.hero-section {
+  min-height: 70vh;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    align-items: flex-start;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.15;
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+  }
+
+  .glass-card {
+    box-shadow: 0 6px 18px rgba(31,41,55,0.06);
+    border-radius: 8px;
+    padding: 1rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .glass-card button {
+    padding: 10px 0;
+  }
 }
