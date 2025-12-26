@@ -24,51 +24,21 @@
 <body class="bg-[#f7f4ef] text-gray-800">
   <!-- NAVBAR -->
   <header class="fixed w-full bg-[#f7f4ef]/90 backdrop-blur z-50 border-b border-gray-300">
-    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-2">
-        <div class="w-12 flex items-center justify-center vintage font-bold">
-          <a href="index.html">
-          <img
-            src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766521760/Speed_money_lending_1_iufjid_he2meg.png"
-            alt="company-logo" />
-        </div>
-        <span class="vintage text-xl font-semibold text-[#48a854]">Speed Money Lending</span>
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row sm:justify-between items-center gap-3">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1766521760/Speed_money_lending_1_iufjid_he2meg.png" alt="company-logo" class="w-12" />
+          <span class="vintage text-lg sm:text-xl font-semibold text-[#48a854]">Speed Money Lending</span>
         </a>
       </div>
 
-      <ul class="hidden md:flex gap-8 text-sm uppercase tracking-widest vintage-nav items-center">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#how-we-work" class="nav-link">How We Work</a></li>
-        <li><a href="#benefits" class="nav-link">Our Benefits</a></li>
-        <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
-        <li>
-          <a href="tel:+15551234567" class="flex items-center gap-2 vintage-phone hover:text-[#b59b6e] transition">
-            <!-- Vintage Rotary Phone SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current" viewBox="0 0 64 64" fill="none"
-              stroke-width="2">
-              <!-- Handset -->
-              <path
-                d="M44 4c4 0 8 4 8 8l0.5 8c0 4-4 8-8 8s-8-4-8-8V12c0-4 4-8 8-8zM20 4c4 0 8 4 8 8v8c0 4-4 8-8 8s-8-4-8-8L12 12c0-4 4-8 8-8z" />
-              <!-- Rotary Dial -->
-              <circle cx="32" cy="44" r="16" />
-              <circle cx="32" cy="44" r="4" fill="currentColor" />
-              <path
-                d="M32 28v-6M42 32h6M32 54v6M22 32h-6M41.3 22.7l4.2-4.2M46.8 41.3l4.2 4.2M22.7 41.3l-4.2 4.2M17.2 22.7l-4.2-4.2" />
-            </svg>
-
-            <!-- Phone Number Text -->
-            <span class="font-serif text-sm tracking-widest">
-              (555) 123‑4567
-            </span>
-          </a>
-        </li>
-      </ul>
-
-      <!-- Hamburger Menu -->
-      <div class="md:hidden hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="flex items-center">
+        <a href="tel:+15551234567" class="inline-flex items-center gap-3 bg-[#48a854] text-white px-4 py-2 rounded-md hover:bg-[#3f9b47] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92V21a1 1 0 0 1-1.11 1 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 3.11 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.66.35 1.3.67 1.9a1 1 0 0 1-.24 1.05L7.91 8.91a16 16 0 0 0 6 6l1.21-1.21a1 1 0 0 1 1.05-.24c.6.32 1.24.55 1.9.67a1 1 0 0 1 .75 1V22z" />
+          </svg>
+          <span class="font-serif text-sm tracking-widest">(555) 123‑4567</span>
+        </a>
       </div>
     </nav>
 
