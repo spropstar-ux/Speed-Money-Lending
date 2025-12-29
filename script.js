@@ -162,7 +162,7 @@ document.getElementById("inquiryForm")?.addEventListener("submit", async functio
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbx2yg6K0-v2VfO9YzmbMOmRsR7q0gFkPqp4Olc29HOcu0xSMl010UAJbT89bsZBv0sw/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycby_ubbB89MbgCPFw-5kF7PIwoKa9EaYh97dT6W8mPEymKx_aCo9bqlc_omb7-oYEbQ-/exec", {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify(formData)
