@@ -77,7 +77,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbz6YRsy4QycHhIBytzKwXtFqmeIVenWhi2HwxrN53uEIR9pF5lo6q_cA9Jcz6bM_2WB/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzgwPlz9S87tNyEiagndLbmXUBiFz1N4qvxav5pj0GM_xnopuEafo1UhM1NGS5R81kN/exec", {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=utf-8"
@@ -162,7 +162,7 @@ document.getElementById("inquiryForm")?.addEventListener("submit", async functio
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbx1pwH8CLaYL_ssC4jM4phlNeyafrfqw_xlZNL69wa6w4hDOdLaIjx-yLohTm4ekDY1ow/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzsgZOAJ1kXo84JWfnv_5wkD0xpD3dnSCFkUMUZbsB2b68Ggts9Nrc3f1tsunRhvMhNBg/exec", {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify(formData)
