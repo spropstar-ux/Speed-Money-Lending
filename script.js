@@ -16,6 +16,24 @@ navLinks.forEach((link) => {
   });
 });
 
+// Intercept in-page anchor clicks so the URL hash doesn't change
+// Smooth-scroll to the target element and close the mobile menu if open
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (!href || href === '#') return; // ignore empty/hash-only links
+    const id = href.slice(1);
+    const target = document.getElementById(id);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // close mobile menu (if open)
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    }
+  });
+});
+
 // Phone Mask
 const phone = document.getElementById('phone');
 if (phone) {
