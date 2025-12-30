@@ -95,7 +95,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwewVkeuIDVquynD7eZTT5xiVN6ci9iLqYi95oLZK5OmJ_4UKIZf1_iZmGo2XQqUEb9/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwxwpfICzD_DSA2coKdx1YoxYUR_sF84GZShxT66mycRJVr_5Unqtz34QnWzZcDU5i5/exec", {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=utf-8"
@@ -180,7 +180,7 @@ document.getElementById("inquiryForm")?.addEventListener("submit", async functio
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbykOBFQJ3-DCwGJOJV1eR2yqiDUxzQR7Tr2dIXnWvY7_op2m7FAlCO3Cih2eeLfn67Qvg/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycby5Un5JKLaeK33pgLefKV3hwGBEONpVc0yWDu42UVyFnBTqOm1-AXuLapEB2HVV5LSt4A/exec", {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify(formData)
