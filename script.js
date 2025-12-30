@@ -180,7 +180,7 @@ document.getElementById("inquiryForm")?.addEventListener("submit", async functio
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbzsgZOAJ1kXo84JWfnv_5wkD0xpD3dnSCFkUMUZbsB2b68Ggts9Nrc3f1tsunRhvMhNBg/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzcXvB939cepMxnp4JtB3fqOkca2OE6DWopCCrGbuIecO7iVO1dMumC7aIVATInDqOt7Q/exec", {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify(formData)
